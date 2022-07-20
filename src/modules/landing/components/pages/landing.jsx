@@ -2,7 +2,7 @@
 import React from 'react'
 
 /* import internal modules */
-import Loading from '../../../commons/Loading'
+import Loading from '../../../../commons/components/Loading'
 
 /** @description This is a functional component landing page
  *  @version 1.0.0

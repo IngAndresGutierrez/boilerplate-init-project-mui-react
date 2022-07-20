@@ -3,10 +3,12 @@ import React, { lazy, Suspense } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 /* import internal modules */
-import Loading from '../../Loading'
-const LazyLanding = lazy(() => import('../../../modules/landing/pages/landing'))
+import Loading from '../../../commons/components/Loading'
+const LazyLanding = lazy(() =>
+  import('../../../modules/landing/components/pages/landing')
+)
 const LazyPageNotFound = lazy(() =>
-  import('../../../modules/notFound/pages/notFound')
+  import('../../../modules/notFound/components/pages/notFound')
 )
 
 /** @description This is a functional component for main router app
