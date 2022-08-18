@@ -3,6 +3,7 @@ import React from 'react'
 
 /* import internal modules */
 import BikesList from '../organisms/BikesList'
+import Footer from '../../../../commons/components/Footer'
 
 /** @description This is a functional component landing page
  *  @version 1.0.0
@@ -15,7 +16,12 @@ import BikesList from '../organisms/BikesList'
  **/
 
 const LandingPage = () => {
-  return <BikesList />
+  return (
+    <>
+      <BikesList />
+      <Footer />
+    </>
+  )
 }
 
 export default LandingPage
