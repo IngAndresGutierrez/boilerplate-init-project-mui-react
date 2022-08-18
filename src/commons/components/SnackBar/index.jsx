@@ -1,7 +1,6 @@
 /* import external modules */
 import {
   Stack,
-  Button,
   Alert as MuiAlert,
   Snackbar as MuiSnackbar,
 } from '@mui/material'
@@ -22,18 +21,6 @@ const Snackbar = () => {
   const dispatch = useDispatch()
   const { handleSnackbar } = useSelector(getCommonsState)
 
-  const handleClick = () => {
-    dispatch(
-      setSnackbar({
-        handleSnackbar: {
-          message: 'Hola',
-          status: true,
-          severity: handleSnackbar?.severity,
-        },
-      })
-    )
-  }
-
   const handleClose = (event, reason) => {
     if (reason === 'clickaway') {
       return
@@ -50,9 +37,6 @@ const Snackbar = () => {
 
   return (
     <Stack spacing={2}>
-      <Button variant="outlined" onClick={handleClick}>
-        Open success snackbar
-      </Button>
       <MuiSnackbar
         onClose={handleClose}
         autoHideDuration={6000}

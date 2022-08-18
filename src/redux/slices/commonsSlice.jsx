@@ -13,6 +13,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
   handleSnackbar: { message: '', status: false, severity: 'success' },
+  disableRentButton: true,
 }
 
 const commonsSlice = createSlice({
@@ -22,10 +23,13 @@ const commonsSlice = createSlice({
     setSnackbar: (state, action) => {
       state.handleSnackbar = action.payload.handleSnackbar
     },
+    setDisableRentButton: (state, action) => {
+      state.disableRentButton = action.payload.disableRentButton
+    },
   },
 })
 
-export const { setSnackbar } = commonsSlice.actions
+export const { setSnackbar, setDisableRentButton } = commonsSlice.actions
 export const getCommonsState = (state) => state.commons
 
 export default commonsSlice.reducer

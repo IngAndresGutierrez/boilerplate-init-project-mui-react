@@ -2,7 +2,7 @@
 import React from 'react'
 
 /* import internal modules */
-import Loading from '../../../../commons/components/Loading'
+import BikesList from '../organisms/BikesList'
 
 /** @description This is a functional component landing page
  *  @version 1.0.0
@@ -15,12 +15,7 @@ import Loading from '../../../../commons/components/Loading'
  **/
 
 const LandingPage = () => {
-  return (
-    <h3>
-      LandingPage
-      <Loading />
-    </h3>
-  )
+  return <BikesList />
 }
 
 export default LandingPage

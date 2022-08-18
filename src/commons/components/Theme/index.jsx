@@ -21,8 +21,8 @@ const theme = createTheme({
       main: '#212121',
     },
     action: {
-      disabledBackground: '#2d3580',
-      disabled: '#E5E5E5',
+      disabledBackground: '#ff586b26',
+      disabled: '#fff',
     },
   },
 })
