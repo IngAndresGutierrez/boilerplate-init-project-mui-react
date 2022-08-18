@@ -19,9 +19,8 @@ const Footer = () => {
       color="text.secondary"
       align="center"
       sx={{ pt: 4, margin: 5 }}
-      onClick={() => alert('Alejandra Pachón Vargas - Te quiero mucho :D')}
     >
-      {'A.P.V © '}
+      {'Andrés Gutiérrez © '}
       {new Date().getFullYear()}
       {'.'}
     </Typography>
